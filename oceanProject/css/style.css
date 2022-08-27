@@ -1,0 +1,238 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+a{
+    text-decoration: none;
+    color: #ffffff;
+}
+
+.titlePage{
+    width: 100%;
+    height: 900px;
+    background-image: url("../img/bgTitle.png");
+    overflow: hidden;
+}
+
+.header{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-left: 6.4%;
+    margin-top: 4%;
+
+    width: 90%;
+}
+
+.logo{
+    font-family: Montserrat, sans-serif;
+    font-size: calc(36 * 100vw/1920);
+    font-weight: 500;
+    transition-duration: .2s;
+}
+
+.logo:hover{
+    color: darkgrey;
+    transition-duration: .2s;
+}
+
+.headerItems{
+    width: 27%;
+    margin-left: 13%;
+
+    display: flex;
+    justify-content: space-between;
+}
+
+.headerItem{
+    font-family: Montserrat, sans-serif;
+    font-size: calc(26 * 100vw/1920);
+    font-weight: 400;
+    transition-duration: .2s;
+}
+
+.headerItem:hover{
+    color: darkgrey;
+    transition-duration: .2s;
+}
+
+.contacts{
+    font-family: Montserrat, sans-serif;
+    font-size: calc(26 * 100vw/1920);
+    font-weight: 400;
+    color: #ffffff;
+    margin-top: -1%;
+}
+
+.titleDiv{
+    margin-left: 6.4%;
+    margin-top: 10%;
+    width: 60%;
+}
+
+.title{
+    font-family: Montserrat, sans-serif;
+    font-size: calc(64 * 100vw/1920);
+    font-weight: 500;
+    color: #ffffff;
+}
+
+.subtitleDiv{
+    margin-left: 6.4%;
+    margin-top: 3%;
+    width: 60%;
+}
+
+.subtitle{
+    font-family: Montserrat, sans-serif;
+    font-size: calc(36 * 100vw/1920);
+    font-weight: 400;
+    color: #ffffff;
+}
+
+.bookButton{
+    width: 18.6%;
+    height: 7.9%;
+    margin-left: 6.4%;
+    margin-top: 3%;
+
+    background-color: #4248FF;
+    border-radius: 20px;
+    outline: none;
+
+    color: #ffffff;
+    font-family: Montserrat, sans-serif;
+    font-size: calc(28 * 100vw/1920);
+    font-weight: 600;
+
+    transition-duration: .2s;
+}
+
+.bookButton:hover{
+    cursor: pointer;
+    background-color: rgb(115, 118, 227);
+
+    transition-duration: .2s;
+}
+
+.aboutPage{
+    width: 100%;
+    height: 647px;
+    background-color: black;
+    overflow: hidden;
+}
+
+.titleDivAbout{
+    margin-left: 6.4%;
+    margin-top: 6%;
+    width: 60%;
+}
+
+.titleAbout{
+    font-family: Montserrat, sans-serif;
+    font-size: calc(64 * 100vw/1920);
+    font-weight: 500;
+    color: #ffffff;
+}
+
+.subtitleDivAbout{
+    margin-left: 6.4%;
+    margin-top: 2%;
+    width: 41%;
+}
+
+.subtitleAbout{
+    font-family: Montserrat, sans-serif;
+    font-size: calc(36 * 100vw/1920);
+    font-weight: 400;
+    color: #ffffff;
+}
+
+.map{
+    margin-left: 60%;
+    margin-top: -15%;
+}
+
+.bookPage{
+    width: 100%;
+    height: 1112px;
+    background-image: url("../img/bgBook.png");
+    overflow: hidden;
+}
+
+.titleDivBook{
+    margin-left: 53%;
+    margin-top: 7%;
+    width: 60%;
+}
+
+.titleBook{
+    font-family: Montserrat, sans-serif;
+    font-size: calc(64 * 100vw/1920);
+    font-weight: 500;
+    color: #ffffff;
+}
+
+.subtitleDivBook{
+    margin-left: 53%;
+    margin-top: 2%;
+    width: 41%;
+}
+
+.subtitleBook{
+    font-family: Montserrat, sans-serif;
+    font-size: calc(36 * 100vw/1920);
+    font-weight: 400;
+    color: #ffffff;
+}
+
+.formToSend{
+    margin-left: 53%;
+    width: 39%;
+    height: 50%;
+}
+
+.inputField{
+    background:none;
+    border: 2px solid #2147CE;
+    border-radius: 20px;
+    width: 95%;
+    height: 15%;
+    margin-top: 3%;
+
+    font-family: Montserrat, sans-serif;
+    font-size: calc(26 * 100vw/1920);
+    font-weight: 400;
+    color: #979797;
+    padding-left: 5%;
+}
+
+input:focus{
+    outline: none;
+}
+
+.submitButton{
+    width: 40%;
+    height: 15%;
+    margin-left: 30%;
+    margin-top: 3%;
+
+    background-color: #4248FF;
+    border-radius: 20px;
+    outline: none;
+
+    color: #ffffff;
+    font-family: Montserrat, sans-serif;
+    font-size: calc(28 * 100vw/1920);
+    font-weight: 600;
+
+    transition-duration: .2s;
+}
+
+.submitButton:hover{
+    cursor: pointer;
+    background-color: rgb(115, 118, 227);
+
+    transition-duration: .2s;
+}
