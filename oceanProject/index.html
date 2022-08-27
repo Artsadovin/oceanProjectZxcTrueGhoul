@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta charset="UTF-8">
+	<title>парковка zxc</title>
+	<link rel="stylesheet" href="css/style.css">
+	<script src="js/jquery-3.3.1.min.js"></script>
+    <script src="js/jquery.scrollTo.min.js"></script>
+    <script src="js/inputmask.js"></script>
+    <script src="js/jquery.maskedinput.min.js"></script>
+</head>
+<body>
+	<div class="titlePage">
+		<div class="header">
+			<a href="#" class="logo">Парковка</a>
+			<div class="headerItems">
+				<a href="#aboutBlock" class="headerItem">О нас</a>
+				<a href="" class="headerItem">Забронировать место</a>
+			</div>
+			<span class="contacts">+7 (960) 090 70-66 <br>
+			Без выходных</span>
+		</div>
+
+		<div class="titleDiv">
+			<span class="title">Новая умная парковка во Владивостоке</span>
+		</div>
+		<div class="subtitleDiv">
+			<span class="subtitle">
+				Забронируйте место на сутки!
+			</span>
+		</div>
+
+		<button class="bookButton">
+			Забронировать
+		</button>
+	</div>
+
+	<div class="aboutPage">
+		<div class="titleDivAbout" id="aboutBlock">
+			<span class="titleAbout">О нас</span>
+		</div>
+		<div class="subtitleDivAbout">
+			<span class="subtitleAbout">Мы начинающая компания, решившая создать первую умную парковку во Владивостоке</span>
+		</div>
+		<iframe class="map" src="https://yandex.ru/map-widget/v1/?um=constructor%3Aa48b3fa06c673024d3fd1126749fa323992f59f8b43f663ed88c8014e12ad04f&amp;source=constructor" width="500" height="400" frameborder="0"></iframe>
+	</div>
+
+	<div class="bookPage">
+		<div class="titleDivBook" id="bookBlock">
+			<span class="titleBook">Забронировать место</span>
+		</div>
+		<div class="subtitleDivBook">
+			<span class="subtitleBook">Оставьте заявку, и мы сообщим вам ваше место</span>
+		</div>
+		<div class="formToSend">
+			<input class="inputField" type="text" id="nn" placeholder="Ваш номер машины">
+			<input class="inputField" type="tel" id="telephone" placeholder="Ваш номер телефона">
+			<script>
+			$(function() {
+				$('#telephone').mask("+7(999) 999 99-99", placeholder="+7(999) 999 99-99");
+				<!--$("#nn").mask("aa999a(99)", placeholder="x999x(99)"); -->
+			});
+			</script>
+
+			<input class="inputField" type="text" name="zad" id="zad" onfocus="this.type = 'date'" placeholder="Дата начала бронирования">
+			<input class="inputField" type="text" name="zat" id="zat" onfocus="this.type = 'time'" placeholder="Время начала бронирования">
+			<input class="inputField" type="text" name="dateEndOfBooking" id="dateEndOfBooking" onfocus="this.type = 'date'" placeholder="Дата окончания бронирования">
+			<input class="inputField" type="text" name="endOfBooking" id="endOfBooking" onfocus="this.type = 'time'" placeholder="Время окончания бронирования">
+
+			<!--<input type="submit" value="Забронировать" class="submitButton" name="regcars" id="regcars"> -->
+			<button type="button" name="regcars" id="regcars" class="submitButton">Забронировать</button>
+		</div>
+		<div class="outText"><span class="text">Ваше место: </span><p class="out"></p></div>
+	</div>
+	<script src="js/script.js"></script>
+</body>
+</html>
